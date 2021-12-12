@@ -107,30 +107,6 @@ footer img{
     font-weight: bold;
 }
 /*INDEX*/
-   
-.integrantes th{
-    font-family: 'Libre Baskerville', serif;
-    padding: 10px;
-    font-size: 25px;
-    font-weight: bold;
-    border-radius: 10px;
-}
-
-.integrantes td{
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.585);
-    padding: 20px;
-    border-radius: 10px;
-    width: 5%;  
-}
-
-.integrantes .nombres{
-    background-color: #ceab4d;
-}
-
-.integrantes .nombres2{
-    background-color: white;
-}
 
 .principal p{
     
@@ -138,15 +114,62 @@ footer img{
     padding: 45px;
     background-color: rgba(0, 0, 0, 0.585);
     border-radius: 10px;
-    margin: 70px;
+    margin: auto;
 }
 
 .principal{
     padding: 80px
 }
 
-.principal .subtitulo{
-    margin-bottom: 60px;
+.integrantes .nombres{
+    background-color: #ceab4d;
+}
+
+.integrantes .nombres,.nombres2{
+   margin-left: 20px;
+   margin-bottom: 20px;
+   margin-right: 20px;
+   font-size: 30px; 
+   margin-top: 30px;
+   color: white;
+}
+
+.integrantes div{
+    background-color: rgba(0, 0, 0, 0.585);
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    padding-bottom: 10px; 
+}
+
+.principal .integrantes{
+    display: grid;
+}
+
+@media(max-width:600px){
+  .principal .integrantes{
+            grid-template-columns: repeat(1,1fr);
+    }
+
+}
+    
+@media(min-width:600px){
+  .principal .integrantes{
+            grid-template-columns: repeat(2,1fr);
+    }  
+
+}
+@media(min-width:768px){
+  .principal .integrantes{
+            grid-template-columns: repeat(3,1fr);
+    }   
+
+}
+@media(min-width:992px){
+  .principal .integrantes{
+           grid-template-columns: repeat(5,1fr);
+    }  
+
 }
 
 /*DISCOGRAFIA*/
@@ -157,28 +180,7 @@ footer img{
     margin-top: 50px;
     margin-left: 50px;
 }
-/*
-@media only screen and(max-width:600px){
-    .contenedor .galeria{
-        grid-template-columns:
-    }
-}
-@media only screen and(min-width:600px){
-    .contendor .galeria{
-        grid-template-columns:
-    }
-}
-@media only screen and(min-width:768px){
-    .contendor .galeria{
-        grid-template-columns:
-    }
-}
-@media(min-width:1200){
-    .contendor .galeria{
-        grid-template-columns:
-    }
-}
-*/
+
 /*MUSICA*/
 .cuerpomusical h1{
     font-size: 50px;
@@ -228,9 +230,6 @@ footer img{
     margin: auto;
     margin-top: 100px;
     border-radius: 10px;
-    /*
-    font-family: 'PT Serif', serif;
-    */
     color: white;
     font-size: 22px;   
 }
@@ -254,6 +253,7 @@ footer img{
     margin-bottom: 10px;
     font-size: 19px;   
 }
+
 textarea{
     max-width: 400px;
     min-width: 400px;
@@ -261,7 +261,3 @@ textarea{
     min-height: 100px;
 }
 
-.integrantes h2{
-    text-align: justify;
-    margin: 100px;
-}
