@@ -7,8 +7,12 @@
     <title>Galeria</title>
     <link rel="stylesheet" href="../styles/estilo.css">
     <link rel="shortcut icon" href="/imagenes/icono.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
     <body>
+        <script>AOS.init(); </script>
          <header class="cabeza">
                  <nav>
                      <ul class="menu">
@@ -20,7 +24,7 @@
                     </ul>
                 </nav>
                 <div class="subcabeza">
-                     <h1>Galeria</h1>
+                     <h1 class="animate__animated animate__fadeInDown">Galeria</h1>
                 </div>
          </header>
                  <main class="fotos">
@@ -67,6 +71,7 @@
           <footer>
                  <section>
                  <h2>Seguilo en sus redes sociales</h2>
+                     <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                         <ul>
                            <li>
                                <a href="https://instagram.com/dreamtheaterofficial?utm_medium=copy_link"><img src="../imagenes/red1.png" width="30" height="30" alt="instagram"></a>
@@ -84,6 +89,7 @@
                                <a href="https://wwwyoutubecomchannelUCBHhdnYxvu94yefpeZABY9g"><img src="../imagenes/red5.png" width="30" height="30" alt="youtube"></a>
                           </li> 
                         </ul>
+                      </div>
                 </section>
                            <p>©Franco Gonzales.Todos los derechos reservados.</p>
           </footer>       
