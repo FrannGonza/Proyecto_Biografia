@@ -108,7 +108,9 @@ footer img{
     font-weight: bold;
 }
 /*INDEX*/
-
+.container .carousel-iner .carousel-item img{
+    margin-left: 300px;
+}
 .principal p{
     
     color: white;
@@ -118,6 +120,12 @@ footer img{
     margin: auto;
 }
 
+.principal h2{
+    margin-bottom: 50px;
+}
+.subtitulo{
+    margin-top: 50px;
+}
 .principal{
     padding: 80px
 }

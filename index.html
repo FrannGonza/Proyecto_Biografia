@@ -17,18 +17,24 @@
         <script>
             AOS.init();
         </script>
-            <header class="cabeza">
-                 <!--Menu de navegacion-->
-                <nav class="menu">   
-                    <!--Links de navegacion-->
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="pages/discografia.html">Discografia</a></li>
-                        <li><a href="pages/musica.html">Musica</a></li>
-                        <li><a href="pages/galeria.html">Galeria</a></li>
-                        <li><a href="pages/contacto.html">Contacto</a></li>     
-                    </ul>
-                </nav>
+               <header class="cabeza">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="index.html">Dream Theater</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                          <a class="nav-link" href="pages/discografia.html">Discografia</a>
+                          <a class="nav-link" href="pages/musica.html">Musica</a>
+                          <a class="nav-link" href="pages/galeria.html">Galeria</a>
+                          <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                          <a class="nav-link disabled"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
                    <div class="subcabeza">
                       <h1 class="animate__animated animate__fadeInDown">Dream Theater</h1>
                        <p>
@@ -61,41 +67,46 @@
                         </div>  
                 </section>
             <h2 class="subtitulo">Integrantes</h2>
-                <div data-aos="fade-up" data-aos-duration="1000">
-                    <section class="integrantes">
-                        <div>
-                            <h2 class="nombres">John Petrucci</h2>
-                            <img src="imagenes/integrante1.jpg" alt="John Petrucci,guitarrista de la banda" width="200" />
-                        </div>
-
-                        <div>
-                            <h2 class="nombres2">James LaBrie</h2>
-                            <img src="imagenes/integrante3.jpg" alt="James LaBrie,voz principal de la banda" width="200" />
-                        </div>
-
-                        <div>
-                            <h2 class="nombres">John Myung</h2>
-                            <img src="imagenes/integrante5.jpg" alt="John Myung,bajista electrico de la banda" width="200" />
-                        </div>
-
-                        <div>
-                            <h2 class="nombres2">Jordan Rudess</h2>
-                            <img src="imagenes/integrante4.jpg" alt="Jordan Rudess,tecladista de la banda" width="200" />
-                        </div>
-
-                        <div>
-                            <h2 class="nombres">Mike Mangini</h2>
-                            <img src="imagenes/integrante2.jpg" alt="Mike Mangini,baterista de la banda" width="200" />
-                        </div>
-                    </section> 
-                </div>                    
+            <section class="container">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                       <div class="carousel-item active">
+                           <h2 class="nombres">John Petrucci</h2>
+                           <img src="imagenes/integrante1.jpg" class="d-block w-50" alt="John Petrucci,guitarrista de la banda">
+                       </div>
+                       <div class="carousel-item">
+                           <h2 class="nombres2">James LaBrie</h2>
+                           <img src="imagenes/integrante3.jpg" class="d-block w-50" alt="James LaBrie,voz principal de la banda">
+                       </div>
+                       <div class="carousel-item">
+                           <h2 class="nombres">John Myung</h2>
+                           <img src="imagenes/integrante5.jpg" class="d-block w-50" alt="John Myung,bajista electrico de la banda">
+                       </div>
+                       <div class="carousel-item">
+                           <h2 class="nombres2">Jordan Rudess</h2>
+                           <img src="imagenes/integrante4.jpg" class="d-block w-50" alt="Jordan Rudess,tecladista de la banda">
+                       </div>
+                       <div class="carousel-item">
+                           <h2 class="nombres">Mike Mangini</h2>
+                           <img src="imagenes/integrante2.jpg" class="d-block w-50" alt="Mike Mangini,baterista de la banda">
+                     </div>
+                </div>
+                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                       <span class="visually-hidden">Previous</span>
+                     </button>
+                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                       <span class="visually-hidden">Next</span>
+                     </button>
+                   </div>
+            </section>                            
             </main>
                 <!--pie de pagina, sus redes sociales y copyright-->        
         <footer>
             <section>
                 <h2>Seguilo en sus redes sociales</h2>
                    <!--links de cada red social-->
-                   <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                         <ul>
                             <li>
                                 <a href="https://instagram.com/dreamtheaterofficial?utm_medium=copy_link"><img src="imagenes/red1.png" width="30" height="30" alt="instagram" /></a>
@@ -113,7 +124,6 @@
                                 <a href="https://wwwyoutubecomchannelUCBHhdnYxvu94yefpeZABY9g"><img src="imagenes/red5.png" width="30" height="30" alt="youtube" /></a>
                             </li>
                         </ul>
-                    </div>
                 </section>  
                 <p>©Franco Gonzales.Todos los derechos reservados.</p>
        </footer>
