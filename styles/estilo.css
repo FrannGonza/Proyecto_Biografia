@@ -108,9 +108,7 @@ footer img{
     font-weight: bold;
 }
 /*INDEX*/
-.container .carousel-iner .carousel-item img{
-    margin-left: 300px;
-}
+
 .principal p{
     
     color: white;
@@ -159,7 +157,7 @@ footer img{
   .principal .integrantes, .contenedor .galeria{
             grid-template-columns: repeat(1,1fr);
     }
-
+    
 }
     
 @media(min-width:600px){
