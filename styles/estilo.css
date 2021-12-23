@@ -3,29 +3,28 @@
     padding: 0;
     font-family: 'PT Serif', serif;
   
-}
-/*INDEX-DISCOGRAFIA-GALERIA-MUSICA-CONTACTO*/
-
-body{
+  }
+  
+  /*INDEX-DISCOGRAFIA-GALERIA-MUSICA-CONTACTO*/
+  body{
     background-image: url(../imagenes/imagen2.jpg);   
-}
-
-.cabeza{
+  }
+  .cabeza{
     height: 100vh;
     background-image: url(../imagenes/imagen1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-}
-
-h1{
+  }
+  
+  h1{
     color: #ceab4d;
     font-size: 83px;
     font-family: 'Libre Baskerville', serif; 
     text-align: center;  
-}
-
-h2{
+  }
+  
+  h2{
     color: #ceab4d;
     text-align: center;
     font-size: 55px;
@@ -33,135 +32,130 @@ h2{
     margin-top: 50px;
     background-color: rgba(103, 104, 24, 0.959);
     border-radius: 10px;   
-}
-
-footer p{
+  }
+  
+  .subtitulo{
+    margin-top: 50px;
+  }
+  
+  .menu {
+    background-color: rgba(0, 0, 0, 0.733);
+    position: fixed;
+    width: 100%;
+    padding: 13px; }
+  .menu li {
+    display: inline-block;
+    color: white;
+    width: 19%;
+    text-align: center; }
+  .menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px; }
+   
+  /*FOOTER DE TODAS LAS PAGINAS*/
+  footer p {
     color: white;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.585);
-    padding: 15px;
-}
-
-footer h2{
+    padding: 15px; }
+  
+  footer h2 {
     text-align: center;
     color: #ceab4d;
     margin: 80px;
-    font-size: 50px;    
-}
-
-footer li{
+    font-size: 50px; }
+  
+  footer li {
     display: inline-block;
     list-style: none;
     text-align: center;
     text-decoration: none;
     width: 19%;
-    margin-bottom: 30px;
-}
-
-footer img{
+    margin-bottom: 30px; }
+  
+  footer img {
     background-color: rgba(0, 0, 0, 0.585);
     padding: 20px;
     border-radius: 10px;
-    box-sizing: content-box;
-}
-
-.subcabeza{
+    box-sizing: content-box; }
+  
+  /*TITULO DE TODAS LAS PAGINAS*/
+  .subcabeza {
     padding: 150px;
     height: 60%;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     text-align: center;
-    flex-direction:column;
-}
-
-.subcabeza p{
+    flex-direction: column; }
+  .subcabeza p {
     color: white;
     font-size: 20px;
-    font-weight: bold;
-}
-/*INDEX*/
-
-.principal p{
-    
+    font-weight: bold; }
+  .subcabeza h1 {
+    color: #ceab4d;
+    font-size: 83px;
+    font-family: 'Libre Baskerville', serif;
+    text-align: center; }
+  
+  /*INDEX*/
+  .principal {
+    padding: 80px; }
+  .principal p {
     color: white;
     padding: 45px;
     background-color: rgba(0, 0, 0, 0.585);
     border-radius: 10px;
-    margin: auto;
-}
-
-.principal h2{
-    margin-bottom: 50px;
-}
-.subtitulo{
-    margin-top: 50px;
-}
-.principal{
-    padding: 80px
-}
-
-@media(max-width:600px){
-    
-    
-}
-    
-@media(min-width:600px){
-    
-
-}
-@media(min-width:768px){
-     
-
-}
-@media(min-width:992px){
- 
-
-}
-
-/*DISCOGRAFIA*/
-.contenedor .galeria{
+    margin: auto; }
+  .principal h2 {
+    margin-bottom: 50px; }
+  
+  .card-body {
+    background-color: rgba(103, 104, 24, 0.959); }
+  .card-body .card-title {
+    text-align: center;
+    color: #ceab4d;
+    font-weight: bold;
+    font-size: 25px; }
+  
+  /*DISCOGRAFIA*/
+  
+  .contenedor .galeria{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     row-gap: 70px;
     margin-top: 80px;
     margin-left: 80px;
     cursor: pointer;
-}
-
-
-.galeria div:hover{
+  }
+  
+  .galeria div:hover{
     transform: scale(1.3 , 1.3);
     transition: 500ms all;
-}
-
-/*GALERIA*/
-.fotos .grid_img{
+  }
+  
+  /*GALERIA*/
+  
+  .fotos .grid_img{
     display: grid;
     grid-template-columns: auto auto auto auto;
     row-gap: 50px;
     margin-top: 50px;
     margin-left: 50px;
-}
-
-/*CONTACTO*/
-
-.datos{
-    text-align: center;
-    font-family: 'Libre Baskerville', serif;
-    font-size: 30px;
-}
-
-.cuerpocontacto h1{
+  }
+  
+  /*CONTACTO*/
+  
+  .cuerpocontacto h1 {
     font-size: 50px;
     text-align: center;
-    margin-top: 100px;
-}
-
-.cuerpocontacto h2{
-    margin-bottom: 10px;
-}
-
-.cuerpocontacto form{
+    margin-top: 100px; }
+  
+  .cuerpocontacto h2 {
+    margin-bottom: 10px; }
+  
+  .cuerpocontacto form {
     background-color: rgba(0, 0, 0, 0.585);
     width: 400px;
     padding: 30px;
@@ -169,39 +163,48 @@ footer img{
     margin-top: 100px;
     border-radius: 10px;
     color: white;
-    font-size: 22px;   
-}
-
-.cuerpocontacto input{
+    font-size: 22px; }
+  
+  .cuerpocontacto input {
     width: 100%;
     background-color: #ceab4d;
     padding: 3px;
     border-radius: 5px;
     margin-bottom: 10px;
     border: none;
-    color: white;
-}
-
-.cuerpocontacto .boton{
+    color: white; }
+  
+  .cuerpocontacto .boton {
     width: 100%;
-    border:none;
+    border: none;
     padding: 10px;
     color: white;
     margin: 10px 0;
     margin-bottom: 10px;
-    font-size: 19px;   
-}
-
-textarea{
+    font-size: 19px; }
+  
+  .datos{
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 30px;
+  }
+  textarea{
     max-width: 200px;
     min-width: 340px;
     max-height: 200px;
     min-height: 100px;
-}
-.card-body .card-title{
-    text-align: center;
-    color: white;
-}
-.card-body{
-    background-color: rgba(103, 104, 24, 0.959);
-}
+  }
+  
+    @media(max-width:600px){
+       
+    }
+        
+    @media(min-width:600px){
+      
+    }
+    @media(min-width:768px){
+        
+    }
+    @media(min-width:992px){
+  
+    }

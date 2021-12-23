@@ -1,0 +1,160 @@
+/*INDEX-DISCOGRAFIA-GALERIA-MUSICA-CONTACTO*/
+
+.menu{
+    background-color: rgba(0, 0, 0, 0.733);
+    position: fixed;
+    width: 100%;
+    padding: 13px;
+        
+    li{
+    display:inline-block;
+    color:white;
+    width: 19%;
+    text-align: center;
+}     
+          
+    a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}      
+         
+       
+}
+ 
+/*FOOTER DE TODAS LAS PAGINAS*/
+
+
+footer {
+    p{
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.585);
+    padding: 15px;
+}
+             
+    h2{
+    text-align: center;
+    color: #ceab4d;
+    margin: 80px;
+    font-size: 50px;
+} 
+           
+    li{
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+    width: 19%;
+    margin-bottom: 30px;
+}            
+                   
+    img{
+    background-color: rgba(0, 0, 0, 0.585);
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: content-box;
+}                
+                    
+              
+}
+
+/*TITULO DE TODAS LAS PAGINAS*/
+.subcabeza{
+    padding: 150px;
+    height: 60%;
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    flex-direction:column;
+                
+    p{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}               
+    h1{
+    color: #ceab4d;
+    font-size: 83px;
+    font-family: 'Libre Baskerville', serif; 
+    text-align: center;  
+}                          
+
+}
+
+/*INDEX*/
+
+.principal {
+    padding: 80px;
+
+    p{
+    color: white;
+    padding: 45px;
+    background-color: rgba(0, 0, 0, 0.585);
+    border-radius: 10px;
+    margin: auto; 
+}
+
+    h2{
+    margin-bottom: 50px;
+    }
+}
+
+.card-body{
+    background-color: rgba(103, 104, 24, 0.959);
+                   
+    .card-title{
+    text-align: center;
+    color: #ceab4d;
+}                                    
+                   
+}                       
+
+/*CONTACTO*/
+
+
+.cuerpocontacto{
+
+    h1{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+}
+                    
+    h2{
+    margin-bottom: 10px;
+}                 
+                     
+    form{
+    background-color: rgba(0, 0, 0, 0.585);
+    width: 400px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    color: white;
+    font-size: 22px;   
+}                  
+                     
+    input{
+    width: 100%;
+    background-color: #ceab4d;
+    padding: 3px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: none;
+    color: white;
+}                  
+
+    .boton{
+    width: 100%;
+    border:none;
+    padding: 10px;
+    color: white;
+    margin: 10px 0;
+    margin-bottom: 10px;
+    font-size: 19px;   
+}                                        
+               
+}
