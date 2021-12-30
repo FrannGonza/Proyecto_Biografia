@@ -1,13 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'PT Serif', serif; 
-}
+  font-family: 'PT Serif', serif; }
 
 /*INDEX-DISCOGRAFIA-GALERIA-MUSICA-CONTACTO*/
 body {
-  background-image: url(../imagenes/imagen2.jpg); 
-}
+  background-image: url(../imagenes/imagen2.jpg); }
 
 .cabeza {
   height: 100vh;
@@ -39,21 +37,18 @@ h2 {
   position: fixed;
   width: 100%;
   padding: 13px; }
-
-.menu li {
+  .menu li {
     display: inline-block;
     color: white;
     width: 19%;
     text-align: center; }
-
-.menu a {
+  .menu a {
     text-decoration: none;
     color: white;
     font-weight: bold;
     font-size: 18px; }
 
 /*FOOTER DE TODAS LAS PAGINAS*/
-
 footer p {
   color: white;
   text-align: center;
@@ -81,7 +76,6 @@ footer img {
   box-sizing: content-box; }
 
 /*TITULO DE TODAS LAS PAGINAS*/
-
 .subcabeza {
   padding: 150px;
   height: 60%;
@@ -89,20 +83,17 @@ footer img {
   justify-content: center;
   text-align: center;
   flex-direction: column; }
-
-.subcabeza p {
-  color: white;
-  font-size: 20px;
-  font-weight: bold; }
-
-.subcabeza h1 {
-  color: #ceab4d;
-  font-size: 83px;
-  font-family: 'Libre Baskerville', serif;
-  text-align: center; }
+  .subcabeza p {
+    color: white;
+    font-size: 20px;
+    font-weight: bold; }
+  .subcabeza h1 {
+    color: #ceab4d;
+    font-size: 83px;
+    font-family: 'Libre Baskerville', serif;
+    text-align: center; }
 
 /*INDEX*/
-
 .principal {
   padding: 80px; }
 
@@ -140,7 +131,6 @@ footer img {
   transition: 500ms all; }
 
 /*GALERIA*/
-
 .fotos .grid_img {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -149,7 +139,6 @@ footer img {
   margin-left: 50px; }
 
 /*CONTACTO*/
-
 .cuerpocontacto h1 {
   font-size: 50px;
   text-align: center;
