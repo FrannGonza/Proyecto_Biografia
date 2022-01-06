@@ -14,12 +14,6 @@ body {
   background-position: center;
   background-attachment: fixed; }
 
-h1 {
-  color: #ceab4d;
-  font-size: 83px;
-  font-family: 'Libre Baskerville', serif;
-  text-align: center; }
-
 h2 {
   color: #ceab4d;
   text-align: center;
@@ -37,16 +31,18 @@ h2 {
   position: fixed;
   width: 100%;
   padding: 13px; }
-  .menu li {
-    display: inline-block;
-    color: white;
-    width: 19%;
-    text-align: center; }
-  .menu a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 18px; }
+
+.menu li {
+  color: white;
+  display: inline-block;
+  width: 19%;
+  text-align: center; }
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px; }
 
 /*FOOTER DE TODAS LAS PAGINAS*/
 footer p {
@@ -83,15 +79,17 @@ footer img {
   justify-content: center;
   text-align: center;
   flex-direction: column; }
-  .subcabeza p {
-    color: white;
-    font-size: 20px;
-    font-weight: bold; }
-  .subcabeza h1 {
-    color: #ceab4d;
-    font-size: 83px;
-    font-family: 'Libre Baskerville', serif;
-    text-align: center; }
+
+.subcabeza p {
+  color: white;
+  font-size: 20px;
+  font-weight: bold; }
+  
+.subcabeza h1 {
+  color: #ceab4d;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 83px;
+  text-align: center; }
 
 /*INDEX*/
 .principal {
@@ -117,7 +115,6 @@ footer img {
   font-size: 25px; }
 
 /*DISCOGRAFIA*/
-
 .contenedor .galeria {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -148,13 +145,13 @@ footer img {
   margin-bottom: 10px; }
 
 .cuerpocontacto form {
+  color: white;
   background-color: rgba(0, 0, 0, 0.585);
   width: 400px;
   padding: 30px;
   margin: auto;
   margin-top: 100px;
   border-radius: 10px;
-  color: white;
   font-size: 22px; }
 
 .cuerpocontacto input {
@@ -167,10 +164,10 @@ footer img {
   color: white; }
 
 .cuerpocontacto .boton {
+  color: white;
   width: 100%;
   border: none;
   padding: 10px;
-  color: white;
   margin: 10px 0;
   margin-bottom: 10px;
   font-size: 19px; }
