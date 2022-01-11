@@ -5,7 +5,7 @@
 
 }
 @mixin color_tipografia() {
-  color: #ceab4d;
+  color: #dfa2c5;
   font-family: 'Libre Baskerville', serif;
 
 }
@@ -17,23 +17,23 @@
 
 /*INDEX-DISCOGRAFIA-GALERIA-MUSICA-CONTACTO*/
 body{
-  background-image: url(../imagenes/imagen2.jpg);   
+  background-color: black;  
 }
 .cabeza{
   height: 100vh;
-  background-image: url(../imagenes/imagen1.jpg);
+  background-image: url(../imagenes/imagen3.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
 }
 
 h2{
-  color: #ceab4d;
+  color:#dfa2c5;
   text-align: center;
   font-size: 55px;
   margin-bottom: 50px;
   margin-top: 50px;
-  background-color: rgba(103, 104, 24, 0.959);
+  background-color:#5757a2;
   border-radius: 10px;   
 }
 
@@ -41,27 +41,6 @@ h2{
   margin-top: 50px;
 }
 
-.menu {
-  background-color: rgba(0, 0, 0, 0.733);
-  position: fixed;
-  width: 100%;
-  padding: 13px;
-              
-  li {
-  @include color();
-  display: inline-block;
-  width: 19%;
-  text-align: center; 
-  }               
-                 
-  a {
-  @include color();
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 18px; 
-  }  
-
-}
  /*FOOTER DE TODAS LAS PAGINAS*/
 
  footer{
@@ -69,13 +48,14 @@ h2{
   p{
   @include color();
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.585);
-  padding: 15px; 
+  background-color: rgba(189, 45, 233, 0.143);
+  padding: 15px;
+  border-radius: 10px; 
   }
 
   h2 {
   text-align: center;
-  color: #ceab4d;
+  color: #dfa2c5;
   margin: 80px;
   font-size: 50px;
   }               
@@ -89,7 +69,7 @@ h2{
   }                  
                      
   img {
-  background-color: rgba(0, 0, 0, 0.585);
+  background-color: rgba(189, 45, 233, 0.143);
   padding: 20px;
   border-radius: 10px;
   box-sizing: content-box; 
@@ -99,11 +79,10 @@ h2{
 
 /*TITULO DE TODAS LAS PAGINAS*/
 .subcabeza {
-  padding: 150px;
-  height: 60%;
+  padding: 0 50px;
+  height: 100%;
   display: flex;
   justify-content: center;
-  text-align: center;
   flex-direction: column; 
   p {
   @include color();
@@ -113,19 +92,18 @@ h2{
 
   h1 {
   @include color_tipografia();
-  font-size: 83px;
-  text-align: center;
+  font-size: 100px;
   }
 }   
 
 /*INDEX*/
 .principal {
-  padding: 80px; 
+  padding: 0 50px; 
 
   p{
   @include color();
   padding: 45px;
-  background-color: rgba(0, 0, 0, 0.585);
+  background-color:rgba(189, 45, 233, 0.143);
   border-radius: 10px;
   margin: auto; 
   }
@@ -136,50 +114,89 @@ h2{
 }  
 
 .card-body {
-  background-color: rgba(103, 104, 24, 0.959); 
+  background-color: black; 
  .card-title{
   text-align: center;
-  color: #ceab4d;
+  color: #dfa2c5;
   font-weight: bold;
   font-size: 25px; 
   }
 }
 
-/*DISCOGRAFIA*/
-
-.contenedor{
-  .galeria{
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  row-gap: 70px;
-  margin-top: 80px;
-  margin-left: 80px;
-  cursor: pointer;
-
-}
-
-} 
-.galeria div{
-  &:hover{
-      
-  transform: scale(1.3 , 1.3);
-  transition: 500ms all;
-  }
-}
            
 /*GALERIA*/
 
-.fotos .grid_img{
+.galeria{
+  padding: 0 50px;
+  padding-top:100px;
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  row-gap: 50px;
-  margin-top: 50px;
-  margin-left: 50px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  grid-template-areas:
+  "img2 img3 img1 img1" 
+  "img4 img4 img1 img1"
+  "img5 img5 img8 img8"
+  "img5 img5 img6 img7";
+  gap: .8em;
+}
+
+.galeria-imagen--g1{
+  grid-area: img1;
+
+}
+.galeria-imagen--g2{
+  grid-area: img2;
+
+}.galeria-imagen--g3{
+  grid-area: img3;
+
+}
+.galeria-imagen--g4{
+  grid-area: img4;
+
+}
+.galeria-imagen--g5{
+  grid-area: img5;
+
+}.galeria-imagen--g6{
+  grid-area: img6;
+
+}.galeria-imagen--g7{
+  grid-area: img7;
+
+}
+.galeria-imagen--g8{
+  grid-area: img8;
+
+}
+.galeria-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width:600px) {
+
+  .galeria{
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 
+      "img1 img1"
+      "img1 img1"
+      "img4 img4"
+      "img4 img4"
+      "img2 img7"
+      "img5 img5"
+      "img5 img5"
+      "img6 img3"
+      "img8 img8"
+      "img8 img8";
+  }
+   
 }
 
 /*CONTACTO*/
 
 .cuerpocontacto{
+  padding: 0 50px;
          
   h1{
   font-size: 50px;
@@ -193,7 +210,7 @@ h2{
 
   form {
   @include color();
-  background-color: rgba(0, 0, 0, 0.585);
+  background-color: rgba(189, 45, 233, 0.143);
   width: 400px;
   padding: 30px;
   margin: auto;
@@ -203,13 +220,13 @@ h2{
   }
               
   input {
+  @include color();
   width: 100%;
-  background-color: #ceab4d;
+  background-color: #5757a2;
   padding: 3px;
   border-radius: 5px;
   margin-bottom: 10px;
-  border: none;
-  color: white; 
+  border: none; 
   }
 
   .boton {
@@ -236,17 +253,3 @@ textarea{
   max-height: 200px;
   min-height: 100px;
 }
-
-  @media(max-width:600px){
-     
-  }
-      
-  @media(min-width:600px){
-    
-  }
-  @media(min-width:768px){
-      
-  }
-  @media(min-width:992px){
-
-  }
