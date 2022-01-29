@@ -4,7 +4,7 @@
   font-family: 'PT Serif', serif;
 
 }
-@mixin color_tipografia() {
+@mixin color-tipografia() {
   color: #dfa2c5;
   font-family: 'Libre Baskerville', serif;
 
@@ -30,7 +30,7 @@ body{
 h2{
   color:#dfa2c5;
   text-align: center;
-  font-size: 55px;
+  font-size: 45px;
   margin-bottom: 50px;
   margin-top: 50px;
   background-color:#5757a2;
@@ -41,45 +41,31 @@ h2{
   margin-top: 50px;
 }
 
+.nav-link{
+  font-size: 18px;
+}
+ 
+
  /*FOOTER DE TODAS LAS PAGINAS*/
 
  footer{
-
-  p{
-  @include color();
-  text-align: center;
-  background-color: rgba(189, 45, 233, 0.143);
-  padding: 15px;
-  border-radius: 10px; 
-  }
-
-  h2 {
-  text-align: center;
+  padding: 0 20px;
+ }
+ 
+ 
+.text-center{
   color: #dfa2c5;
-  margin: 80px;
-  font-size: 50px;
-  }               
-  li {
-  display: inline-block;
-  list-style: none;
-  text-align: center;
-  text-decoration: none;
-  width: 19%;
-  margin-bottom: 30px; 
-  }                  
-                     
-  img {
-  background-color: rgba(189, 45, 233, 0.143);
-  padding: 20px;
-  border-radius: 10px;
-  box-sizing: content-box; 
-  }                  
-                
-}                  
+}
+.redes{
+  transition: 0.5s all;
+  &:hover{
+    transform: scale(1.4);
+  }
+}                
 
 /*TITULO DE TODAS LAS PAGINAS*/
 .subcabeza {
-  padding: 0 50px;
+  padding: 0 20px;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -91,18 +77,26 @@ h2{
   }
 
   h1 {
-  @include color_tipografia();
+  @include color-tipografia();
   font-size: 100px;
   }
 }   
 
 /*INDEX*/
+
+.btn{
+  margin-top: 20px;
+  background-color:#1b0621;
+  color:white;
+  border: 3px solid #5757a2;
+}
+
 .principal {
-  padding: 0 50px; 
+  padding: 0 20px; 
 
   p{
   @include color();
-  padding: 45px;
+  padding: 20px;
   background-color:rgba(189, 45, 233, 0.143);
   border-radius: 10px;
   margin: auto; 
@@ -126,8 +120,18 @@ h2{
            
 /*GALERIA*/
 
+.galeria-imagen img{
+  transition: all 0.8s;
+
+  &:hover{
+
+  filter: grayscale(1.5);
+  cursor: pointer;
+  }
+}
+
 .galeria{
-  padding: 0 50px;
+  padding: 0 20px;
   padding-top:100px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -170,11 +174,36 @@ h2{
 
 }
 .galeria-img{
+  
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover
 }
+
 @media (max-width:600px) {
+
+  footer{
+    padding:0 10px;
+
+    h2{
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size:35px;
+    }
+  }
+
+  h2{
+    font-size: 35px;
+  }
+
+  .subcabeza h1{
+    font-size:50px;
+  }
+  .subtitulo{
+    font-size:35px;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
 
   .galeria{
       grid-template-columns: 1fr 1fr;
@@ -195,8 +224,8 @@ h2{
 
 /*CONTACTO*/
 
-.cuerpocontacto{
-  padding: 0 50px;
+.cuerpo-contacto{
+  padding: 0 20px;
          
   h1{
   font-size: 50px;
@@ -248,8 +277,14 @@ h2{
 }
 
 textarea{
-  max-width: 200px;
-  min-width: 340px;
+  max-width: 100%;
+  min-width: 100%;
   max-height: 200px;
   min-height: 100px;
+
+}
+/*Musica*/
+
+.cuerpo-musica{
+  padding: 0 20px;
 }
