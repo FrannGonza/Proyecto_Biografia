@@ -4,8 +4,10 @@
   font-family: 'PT Serif', serif; }
 
 /*INDEX-DISCOGRAFIA-GALERIA-MUSICA-CONTACTO*/
+
 body {
-  background-color: black; }
+  background-color: black;
+  overflow-x: hidden; }
 
 .cabeza {
   height: 100vh;
@@ -30,6 +32,7 @@ h2 {
   font-size: 18px; }
 
 /*FOOTER DE TODAS LAS PAGINAS*/
+
 footer {
   padding: 0 20px; }
 
@@ -38,26 +41,29 @@ footer {
 
 .redes {
   transition: 0.5s all; }
-  .redes:hover {
-    transform: scale(1.4); }
+
+.redes:hover {
+  transform: scale(1.4); }
 
 /*TITULO DE TODAS LAS PAGINAS*/
+
 .subcabeza {
   padding: 0 20px;
   height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column; }
-  .subcabeza p {
-    color: white;
-    font-size: 20px;
-    font-weight: bold; }
-  .subcabeza h1 {
-    color: #dfa2c5;
-    font-family: 'Libre Baskerville', serif;
-    font-size: 100px; }
+.subcabeza p {
+  color: white;
+  font-size: 20px;
+  font-weight: bold; }
+.subcabeza h1 {
+  color: #dfa2c5;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 100px; }
 
 /*INDEX*/
+
 .btn {
   margin-top: 20px;
   background-color: #1b0621;
@@ -66,29 +72,29 @@ footer {
 
 .principal {
   padding: 0 20px; }
-  .principal p {
-    color: white;
-    padding: 20px;
-    background-color: rgba(189, 45, 233, 0.143);
-    border-radius: 10px;
-    margin: auto; }
-  .principal h2 {
-    margin-bottom: 50px; }
+.principal p {
+  color: white;
+  padding: 20px;
+  background-color: rgba(189, 45, 233, 0.143);
+  border-radius: 10px;
+  margin: auto; }
+.principal h2 {
+  margin-bottom: 50px; }
 
 .card-body {
   background-color: black; }
-  .card-body .card-title {
-    text-align: center;
-    color: #dfa2c5;
-    font-weight: bold;
-    font-size: 25px; }
+.card-body .card-title {
+  text-align: center;
+  color: #dfa2c5;
+  font-weight: bold;
+  font-size: 25px; }
 
 /*GALERIA*/
 .galeria-imagen img {
   transition: all 0.8s; }
-  .galeria-imagen img:hover {
-    filter: grayscale(1.5);
-    cursor: pointer; }
+.galeria-imagen img:hover {
+  filter: grayscale(1.5);
+  cursor: pointer; }
 
 .galeria {
   padding: 0 20px;
@@ -96,7 +102,10 @@ footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  grid-template-areas: "img2 img3 img1 img1"  "img4 img4 img1 img1" "img5 img5 img8 img8" "img5 img5 img6 img7";
+  grid-template-areas: "img2 img3 img1 img1" 
+ "img4 img4 img1 img1"
+ "img5 img5 img8 img8"
+ "img5 img5 img6 img7";
   gap: .8em; }
 
 .galeria-imagen--g1 {
@@ -129,58 +138,78 @@ footer {
   object-fit: cover; }
 
 @media (max-width: 600px) {
-  footer {
-    padding: 0 10px; }
-    footer h2 {
-      margin-left: 8px;
-      margin-right: 8px;
-      font-size: 35px; }
-  h2 {
-    font-size: 35px; }
-  .subcabeza h1 {
-    font-size: 50px; }
-  .subtitulo {
-    font-size: 35px;
-    margin-left: 4px;
-    margin-right: 4px; }
-  .galeria {
+footer {
+  padding: 0 10px; }
+
+footer h2 {
+  margin-left: 8px;
+  margin-right: 8px;
+  font-size: 35px; }
+
+h2 {
+  font-size: 35px; }
+
+.subcabeza h1 {
+  font-size: 50px; }
+
+.subtitulo {
+  font-size: 35px;
+  margin-left: 4px;
+  margin-right: 4px; }
+
+.galeria {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "img1 img1" "img1 img1" "img4 img4" "img4 img4" "img2 img7" "img5 img5" "img5 img5" "img6 img3" "img8 img8" "img8 img8"; } }
+    grid-template-areas: "img1 img1"
+ "img1 img1"
+ "img4 img4"
+ "img4 img4"
+ "img2 img7"
+ "img5 img5"
+ "img5 img5"
+ "img6 img3"
+ "img8 img8"
+ "img8 img8"; } }
 
 /*CONTACTO*/
+
 .cuerpo-contacto {
   padding: 0 20px; }
-  .cuerpo-contacto h1 {
-    font-size: 50px;
-    text-align: center;
-    margin-top: 100px; }
-  .cuerpo-contacto h2 {
-    margin-bottom: 10px; }
-  .cuerpo-contacto form {
-    color: white;
-    background-color: rgba(189, 45, 233, 0.143);
-    width: 400px;
-    padding: 30px;
-    margin: auto;
-    margin-top: 100px;
-    border-radius: 10px;
-    font-size: 22px; }
-  .cuerpo-contacto input {
-    color: white;
-    width: 100%;
-    background-color: #5757a2;
-    padding: 3px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    border: none; }
-  .cuerpo-contacto .boton {
-    color: white;
-    width: 100%;
-    border: none;
-    padding: 10px;
-    margin: 10px 0;
-    margin-bottom: 10px;
-    font-size: 19px; }
+
+.cuerpo-contacto h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 100px; }
+
+.cuerpo-contacto h2 {
+  margin-bottom: 10px; }
+
+.cuerpo-contacto form {
+  color: white;
+  background-color: rgba(189, 45, 233, 0.143);
+  width: 400px;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 10px;
+  font-size: 22px; }
+
+.cuerpo-contacto input {
+  color: white;
+  width: 100%;
+  background-color: #5757a2;
+  padding: 3px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: none; }
+
+.cuerpo-contacto .boton {
+  color: white;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  margin: 10px 0;
+  margin-bottom: 10px;
+  font-size: 19px; }
 
 .datos {
   text-align: center;
@@ -194,5 +223,6 @@ textarea {
   min-height: 100px; }
 
 /*Musica*/
+
 .cuerpo-musica {
   padding: 0 20px; }
